@@ -1,0 +1,50 @@
+
+      (Required) The required attribute specifies that an input field must be filled out before submitting the form. It enforces that the user cannot submit the form without completing this field.
+      <label for="username">Username (required):</label>
+      <input type="text" id="username" name="username" required />
+
+      (multiple) The multiple attribute is used with file input fields to allow the selection of multiple files. It can also be used with <select> elements to allow multiple selections.
+      <label for="files">Upload files (multiple):</label>
+      <input type="file" id="files" name="files" multiple />
+
+     (disabled) The disabled attribute disables an input field, making it uneditable and unclickable. Disabled fields are not included in form submission. 
+      <label for="email">Email (disabled):</label>
+      <input type="email" id="email" name="email" value="user@example.com" disabled />
+      
+
+      (readonly) The readonly attribute makes an input field read-only. The user can see the value but cannot change it. Read-only fields are included in form submissions. 
+      <label for="api-key">API Key (readonly):</label>
+      <input type="text" id="api-key" name="api-key" value="6789" readonly />
+
+      (maxlength) The maxlength attribute sets the maximum number of characters that can be entered in an input field.
+      <label for="bio">Bio (maxlength 100):</label>
+      <input type="text" id="bio" name="bio" maxlength="100" />
+      
+
+      (size) The size attribute specifies the visible width of an input field in characters. It does not limit the number of characters that can be entered.
+      <label for="short-text">Short Text (size 15):</label>
+      <input type="text" id="short-text" name="short-text" size="15" />
+
+
+      (autofocus) The autofocus attribute automatically focuses on the input field when the page loads. It is useful for improving user experience by directing focus to the most relevant field. 
+      <label for="name">Name (autofocus):</label>
+      <input type="text" id="name" name="name" autofocus />
+    
+
+     (pattern) The pattern attribute specifies a regular expression that the input's value must match to be considered valid. It is used for custom validation.
+     <input type="text" name="subject_code" pattern="[A-Za-z]{3}" title="Three letter subject code">
+      
+
+     (min and max) The min and max attribute specifies the minimum and maxmium values for an input's element.
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+      
+
+      <label for="start-date">Start Date:</label>
+      <input
+        type="date"
+        id="start-date"
+        name="start-date"
+        min="2024-01-01"
+        max="2024-12-31" />
+    
